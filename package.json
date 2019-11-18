@@ -1,7 +1,7 @@
 {
-  "name": "weapp-ke",
-  "version": "1.51.0",
-  "description": "腾讯课堂小程序",
+  "name": "vision-miniprogram",
+  "version": "0.0.1",
+  "description": "vision小程序预览",
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
