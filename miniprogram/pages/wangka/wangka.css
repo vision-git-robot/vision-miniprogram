@@ -1,0 +1,27 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--zIndexOverlay);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #444546;
+
+  &-text {
+    color: #777;
+    font-size: 14px;
+  }
+}
+
+.page-ipx .footer {
+  padding-bottom: 34px;
+  box-sizing: content-box;
+}

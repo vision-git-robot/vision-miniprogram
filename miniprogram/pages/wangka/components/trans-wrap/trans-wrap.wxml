@@ -1,0 +1,36 @@
+
+<view class="cnt-cls" style="{{trans.getStyle(visibleStyle, invisibleStyle, type, isRender, isVisibleStyle, duration)}};" animation="{{animationData}}" wx:if="{{isRender}}">
+  <slot></slot>
+</view>
+
+<wxs module="trans">
+  function getStyle(visibleStyle, invisibleStyle, type, isRender, isVisibleStyle, duration) {
+    // 若使用自定义style
+    if (visibleStyle && invisibleStyle) {
+      return (isVisibleStyle ? visibleStyle : invisibleStyle) + ';transition: ' + duration + 'ms;';
+    }
+
+    // 若使用组件内置的animation 返回animation执行前的样式
+    var style = !isRender ? 'opacity: 1;' : 'opacity: 0;';
+    switch (type) {
+      case 'left':
+        style += (!isRender ? 'transform: translateX(0px);' : 'transform: translateX(-400px);');
+        break;
+      case 'right':
+        style += (!isRender ? 'transform: translateX(0px);' : 'transform: translateX(400px);');
+        break;
+      case 'top':
+        style += (!isRender ? 'transform: translateY(0px);' : 'transform: translateY(-800px);');
+        break;
+      case 'bottom':
+        style += (!isRender ? 'transform: translateY(0px);' : 'transform: translateY(800px);');
+        break;
+      default:
+        break;
+    }
+    return style;
+  }
+  module.exports = {
+    getStyle: getStyle
+  };
+</wxs>

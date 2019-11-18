@@ -1,0 +1,34 @@
+<navigation-bar showBack="{{true}}" title="{{share.title || '王卡专享课程礼包'}}">
+<view class="{{isIPX ? 'page-ipx' : 'page-normal'}}">
+  <block wx:for="{{infos}}" wx:key="{{index}}">
+    <header wx:if="{{item.type === 'headerImg'}}" url="{{item.url}}"></header>
+    <course
+      wx:else
+      ui="{{item.ui}}"
+      courses="{{item.courses}}"
+      courseType="{{item.type === 'courseMix' ? 'courseMix' : 'courseFree'}}"
+      btnText="{{item.type === 'courseMix' ? '立即报名' : '免费领取'}}"
+      bind:showLoginModal="showLoginModal"
+      bind:showMobileModal="showMobileModal"
+    ></course>
+  </block>
+  <header url="{{footerImg.url}}" bgColor="{{footerImg.bgColor}}"></header>
+  <view wx:if="{{infos && infos.length > 0}}" class="footer">
+    <text class="footer-text">Copyright © 2019 Tencent. All Rights Reserved.</text>
+  </view>
+  <login
+    visible="{{showLogin}}"
+    isModal="{{true}}"
+    loginText="微信登录"
+    bind:loginSuccess="onLoginSuccess"
+    bind:loginCancel="hideLogin"
+  ></login>
+  <mobile
+    visible="{{showMobile}}"
+    bind:mobileSuccess="mobileSuccess"
+    bind:mobileCancel="hideMobileModal"
+  ></mobile>
+  <loaded-fail wx:if="{{showLoadedFail}}" bind:loadedFailTap="fetchData"/>
+</view>
+</navigation-bar>
+       

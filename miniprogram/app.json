@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/wangka/",
+      "name": "wangka",
+      "pages": [
+        "wangka"
+      ],
+      "independent": true
+    }
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "腾讯课堂",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {},
+  "functionalPages": {
+    "independent": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

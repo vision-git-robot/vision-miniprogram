@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cate/cate",
+    "pages/plan/plan",
+    "pages/login/login",
+    "pages/course/course",
+    "pages/list/list",
+    "pages/teacher/teacher",
+    "pages/agency/agency",
+    "pages/course-pkg/course-pkg",
+    "pages/demo/demo",
+    "pages/order/order",
+    "pages/pay/pay"
+  ],
+  "tabBar": {
+    "color": "#777777",
+    "selectedColor": "#23B8FF",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/img/index.png",
+        "selectedIconPath": "assets/img/index-active.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/cate/cate",
+        "iconPath": "assets/img/cate.png",
+        "selectedIconPath": "assets/img/cate-active.png"
+      },
+      {
+        "text": "课程表",
+        "pagePath": "pages/plan/plan",
+        "iconPath": "assets/img/plan.png",
+        "selectedIconPath": "assets/img/plan-active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "腾讯课堂",
+    "navigationBarTextStyle": "black"
+  },
+  "navigateToMiniProgramAppIdList": ["wxe7aa635b9dbc3a54"]
+}

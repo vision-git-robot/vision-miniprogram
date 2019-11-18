@@ -1,0 +1,4 @@
+/* component/weapp-form-report/weapp-form-report.wxss */
+.submit-button{
+    display: none;
+}

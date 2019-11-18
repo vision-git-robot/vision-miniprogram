@@ -1,0 +1,19 @@
+<!-- components/nohost/index.wxml -->
+<view wx:if="{{show}}" class="nohost" style="left:{{left}};top:{{top}}" bind:touchstart="onTouchStart" bind:touchmove="onTouchMove">
+  <button class="nohost-btn" hover-class="z-active" bind:tap="onTapNavBtn"></button>
+  <text class="nohost-tips" style="display:{{showTips ? 'block' : 'none'}}">{{tips}}</text>
+  <view class="nohost-list {{showList ? 'z-show' : ''}} {{step === 1 ? '' : 'z-step2'}}">
+    <button class="nohost-list-tt" bind:tap="onTapTitle">
+      <view class="nohost-tt-arrow"></view>
+      {{title}}
+    </button>
+    <view class="nohost-list-wrap">
+      <button wx:if="{{step === 1}}" class="nohost-list-item nohost-list-item--online {{isOnline ? 'z-sel' : ''}}" bind:tap="onTapOnline">正式环境</button>
+      <button class="nohost-list-item {{step === 1 ? 'z-show-arrow' : ''}} {{selectIdx === index ? 'z-sel' : ''}}" wx:for="{{list}}" wx:key="*this" bind:tap="onTapNavItem" data-idx="{{index}}">
+        {{item}}
+        <view class="nohost-arrow"></view>
+      </button>
+    </view>
+  </view>
+  <view wx:if="{{showList}}" class="nohost-mask" bind:tap="onTapMask"></view>
+</view>

@@ -1,0 +1,64 @@
+
+@import '../../assets/css/_function.css';
+
+.navigation {
+  width: 100%;
+
+  &-wrap {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+  }
+
+  &-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+    padding: 4px 10px;
+    height: 24px;
+    width: 67px;
+    border-radius: 16px;
+    opacity: 0.8;
+    background-color: #fff;
+    box-sizing: content-box;
+    border: 1rpx solid #ebebeb;
+
+    &-mid {
+      width: 24px;
+    }
+  }
+  &-item {
+    width: 24px;
+    height: 24px;
+  }
+  &-back {
+    background: url('../../assets/img/nav-back.png') no-repeat;
+    background-size: 24px 24px;
+  }
+  &-home {
+    background: url('../../assets/img/nav-home.png') no-repeat;
+    background-size: 24px 24px;
+  }
+  &-line {
+    position: absolute;
+    left: 50%;
+    top: 7px;
+    width: 1px;
+    height: 18px;
+    background-color: #ccc;
+    transform: scale(0.5, 1);
+    transform-origin: right center;
+  }
+
+  &-title {
+    text-align: center;
+
+    @include ellipsis-lines(1);
+  }
+}

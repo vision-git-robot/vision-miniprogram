@@ -1,0 +1,102 @@
+.overlay-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-modal {
+    width: 622rpx;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+.mobile-wrap {
+    position: relative;
+    padding: 24px 25px 24px;
+    text-align: center;
+  }
+
+.mobile-wrap::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      background-color: #e5e5e5;
+      -webkit-transform: scale(1, 0.5);
+          -ms-transform: scale(1, 0.5);
+              transform: scale(1, 0.5);
+      -webkit-transform-origin: center bottom;
+          -ms-transform-origin: center bottom;
+              transform-origin: center bottom;
+    }
+
+.mobile-title {
+    padding-bottom: 20px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+
+.mobile-content {
+    line-height: 20px;
+    font-size: 15px;
+    color: #888;
+  }
+
+.mobile-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 48px;
+  }
+
+.mobile-btns-cancel,
+  .mobile-btns-ok {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 18px;
+    line-height: 48px;
+  }
+
+.mobile-btns-cancel::after, .mobile-btns-ok::after {
+      border: 0;
+    }
+
+.mobile-btns-cancel {
+    color: #000;
+  }
+
+.mobile-btns-ok {
+    color: #3bc51e;
+    position: relative;
+  }
+
+.mobile-btns-ok::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      right: 0;
+      top: 0;
+      height: 100%;
+      background-color: #e5e5e5;
+      -webkit-transform: scale(0.5, 1);
+          -ms-transform: scale(0.5, 1);
+              transform: scale(0.5, 1);
+      -webkit-transform-origin: right center;
+          -ms-transform-origin: right center;
+              transform-origin: right center;
+    }

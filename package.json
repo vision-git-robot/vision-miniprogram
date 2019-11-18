@@ -1,0 +1,102 @@
+{
+  "name": "weapp-ke",
+  "version": "1.51.0",
+  "description": "腾讯课堂小程序",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "init": "tnpm install && cd miniprogram && tnpm install",
+    "lint": "eslint miniprogram/**/*.js",
+    "stylelint": "stylelint miniprogram/**/*.css",
+    "stylelint:fix": "stylelint miniprogram/**/*.css --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nohost": "gulp nohost",
+    "rmnohost": "gulp removeNohost",
+    "commit": "git-cz",
+    "precommit": "lint-staged",
+    "upload": "imweapp upload",
+    "buildNpm": "imweapp build --npm tnpm",
+    "preview": "imweapp preview"
+  },
+  "pre-commit": [
+    "lint",
+    "stylelint"
+  ],
+  "browserslist": [
+    "last 5 versions",
+    "> 5%",
+    "IE 10",
+    "Android > 4.0"
+  ],
+  "keywords": [],
+  "author": "",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "miniprogram/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "miniprogram/**/*.css": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "@tencent/imweapp": "^1.0.2",
+    "@tencent/imwxutils": "^2.6.3",
+    "@tencent/publish-check": "^0.2.0",
+    "babel-eslint": "^10.0.1",
+    "commander": "^2.20.0",
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.7.0",
+    "eslint-config-imweb": "^0.2.11",
+    "gulp": "^4.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-json-editor": "^2.5.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-template": "^5.0.0",
+    "husky": "^1.3.1",
+    "imagemin-gifsicle": "^5.2.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-svgo": "^6.0.0",
+    "inquirer": "^6.3.1",
+    "lint-staged": "^8.1.4",
+    "minimist": "^1.2.0",
+    "postcss-advanced-variables": "^2.3.3",
+    "postcss-color-function": "4.0.1",
+    "postcss-custom-media": "^7.0.7",
+    "postcss-custom-properties": "^8.0.9",
+    "postcss-extend-rule": "^2.0.0",
+    "postcss-font-base64": "^1.0.5",
+    "postcss-nested": "^4.1.0",
+    "postcss-partial-import": "^4.1.0",
+    "postcss-scss": "^2.0.0",
+    "postcss-url": "^8.0.0",
+    "pre-commit": "^1.2.2",
+    "shelljs": "^0.8.3",
+    "standard-version": "^5.0.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-imweb": "^1.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "svgo": "^1.0.5",
+    "through2": "^3.0.0"
+  },
+  "dependencies": {}
+}
