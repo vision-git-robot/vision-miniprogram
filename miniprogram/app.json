@@ -10,6 +10,14 @@
         "wangka"
       ],
       "independent": true
+    },
+    {
+      "root": "vision/act-test/",
+      "name": "act-test",
+      "pages": [
+        "pages/act-test/index"
+      ],
+      "independent": true
     }
   ],
   "window": {
