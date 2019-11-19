@@ -67,22 +67,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 0,
 			"list": [
-				{
-					"id": 1,
-					"name": "王卡页",
-					"pathName": "pages/wangka/wangka",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 2,
-					"name": "vision活动",
-					"pathName": "vision/act-test/pages/act-test/index",
-					"query": "",
-					"scene": null
-				}
 			]
 		}
 	}

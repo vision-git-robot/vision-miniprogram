@@ -1,4 +1,0 @@
-.full-screen {
-  position: fixed;
-  z-index: 4000;
-}

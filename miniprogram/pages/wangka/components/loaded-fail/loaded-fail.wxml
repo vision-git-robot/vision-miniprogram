@@ -1,7 +1,0 @@
-<view class="cnt-cls" bindtap="onTap">
-  <view class="loaded-fail-wrap">
-    <view class="icon-font i-alert-border"></view>
-    <text wx:if="{{text}}">{{text}}</text>
-    <slot></slot>
-  </view>
-</view>

@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "trans-wrap": "../trans-wrap/trans-wrap"
-  }
-}

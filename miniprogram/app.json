@@ -3,32 +3,12 @@
     "pages/index/index"
   ],
   "subPackages": [
-    {
-      "root": "pages/wangka/",
-      "name": "wangka",
-      "pages": [
-        "wangka"
-      ],
-      "independent": true
-    },
-    {
-      "root": "vision/act-test/",
-      "name": "act-test",
-      "pages": [
-        "pages/act-test/index"
-      ],
-      "independent": true
-    }
   ],
   "window": {
     "backgroundColor": "#ffffff",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "腾讯课堂",
+    "navigationBarTitleText": "vision预览",
     "navigationBarTextStyle": "black"
   },
-  "usingComponents": {},
-  "functionalPages": {
-    "independent": true
-  },
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }
