@@ -10,11 +10,5 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tencent/edu-html": "^1.0.0",
-    "@tencent/im-url": "^1.0.3",
-    "@tencent/imwxutils": "^2.6.8",
-    "@tencent/weapp-form-report": "^0.0.3",
-    "@tencent/weapp-impush-client": "^1.2.1",
-    "@tencent/weapp-nohost": "^0.3.3"
   }
 }
