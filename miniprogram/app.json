@@ -3,6 +3,14 @@
     "pages/index/index"
   ],
   "subPackages": [
+    {
+      "root": "vision/miniprogram/",
+      "name": "miniprogram",
+      "pages": [
+        "pages/miniprogram/index"
+      ],
+      "independent": true
+    }
   ],
   "window": {
     "backgroundColor": "#ffffff",

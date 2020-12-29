@@ -1,0 +1,2 @@
+@import "../../common/styles~miniprogram.wxss";
+@import "../../common/miniprogram.wxss";
