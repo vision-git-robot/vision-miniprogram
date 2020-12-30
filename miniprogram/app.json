@@ -3,6 +3,14 @@
     "pages/index/index"
   ],
   "subPackages": [
+    {
+      "root": "vision/test-mini2/",
+      "name": "test-mini2",
+      "pages": [
+        "pages/test-mini2/index"
+      ],
+      "independent": true
+    }
   ],
   "window": {
     "backgroundColor": "#ffffff",
