@@ -1,6 +1,6 @@
 {
   "name": "vision-miniprogram",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "vision小程序预览",
   "main": "index.js",
   "scripts": {
