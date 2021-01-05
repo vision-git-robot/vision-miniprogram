@@ -3,6 +3,14 @@
     "pages/index/index"
   ],
   "subPackages": [
+    {
+      "root": "vision/sdafsd/",
+      "name": "sdafsd",
+      "pages": [
+        "pages/sdafsd/index"
+      ],
+      "independent": true
+    }
   ],
   "window": {
     "backgroundColor": "#ffffff",
