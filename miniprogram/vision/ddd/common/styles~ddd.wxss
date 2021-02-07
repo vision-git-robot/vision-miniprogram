@@ -1,0 +1,426 @@
+@charset "UTF-8";
+/** 重置浏览器样式 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+page {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+
+.h5-body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", STHeiTi, Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+.h5-article,
+.h5-aside,
+.h5-details,
+.h5-figcaption,
+.h5-figure,
+.h5-footer,
+.h5-header,
+.h5-hgroup,
+.h5-main,
+.h5-menu,
+.h5-nav,
+.h5-section,
+.h5-summary {
+  display: block;
+}
+
+.h5-audio,
+.h5-canvas,
+.h5-progress,
+.h5-video {
+  display: inline-block;
+}
+
+.h5-audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+.h5-progress {
+  vertical-align: baseline;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+.h5-a {
+  background: transparent;
+  text-decoration: none;
+  color: #08c;
+}
+
+.h5-a:active {
+  outline: 0;
+}
+
+.h5-abbr[.h5-title] {
+  border-bottom: 1px dotted;
+}
+
+.h5-b,
+.h5-strong {
+  font-weight: bold;
+}
+
+.h5-dfn {
+  font-style: italic;
+}
+
+.h5-mark {
+  background: #ff0;
+  color: #000;
+}
+
+.h5-small {
+  font-size: 80%;
+}
+
+.h5-sub,
+.h5-sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.h5-sup {
+  top: -0.5em;
+}
+
+.h5-sub {
+  bottom: -0.25em;
+}
+
+.h5-img {
+  border: 0;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.h5-pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.h5-code,
+.h5-kbd,
+.h5-pre,
+.h5-samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.h5-button,
+.h5-input,
+.h5-optgroup,
+.h5-select,
+.h5-textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.h5-button,
+.h5-input,
+.h5-select {
+  overflow: visible;
+}
+
+.h5-button,
+.h5-select {
+  text-transform: none;
+}
+
+.h5-button,
+page .h5-input[type=.h5-button],
+.h5-input[type=reset],
+.h5-input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+.h5-button::-moz-focus-inner,
+.h5-input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.h5-input {
+  line-height: normal;
+}
+
+.h5-input[type=checkbox],
+.h5-input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.h5-input[type=number]::-webkit-inner-spin-button,
+.h5-input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.h5-input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: border-box;
+}
+
+.h5-input[type=search]::-webkit-search-cancel-button,
+.h5-input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.h5-fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+.h5-legend {
+  border: 0;
+  padding: 0;
+}
+
+.h5-textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+.h5-optgroup {
+  font-weight: bold;
+}
+
+.h5-input,
+.h5-select,
+.h5-textarea {
+  outline: 0;
+}
+
+.h5-textarea,
+.h5-input {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+.h5-input::-ms-clear,
+.h5-input::-ms-reveal {
+  display: none;
+}
+
+.h5-input::-moz-placeholder,
+.h5-textarea::-moz-placeholder {
+  color: #999;
+}
+
+.h5-input:-ms-input-placeholder,
+.h5-textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+.h5-input::-webkit-input-placeholder,
+.h5-textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+.placeholder {
+  color: #999;
+}
+
+.h5-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.h5-td,
+.h5-th {
+  padding: 0;
+}
+
+.h5-h1,
+.h5-h2,
+.h5-h3,
+.h5-h4,
+.h5-h5,
+.h5-h6,
+.h5-p,
+.h5-figure,
+.h5-form,
+.h5-blockquote {
+  margin: 0;
+}
+
+.h5-ul,
+.h5-ol,
+.h5-li,
+.h5-dl,
+.h5-dd {
+  margin: 0;
+  padding: 0;
+}
+
+.h5-ul,
+.h5-ol {
+  list-style: none outside none;
+}
+
+.h5-h1,
+.h5-h2,
+.h5-h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+
+.h5-h1 {
+  font-size: 18px;
+}
+
+.h5-h2 {
+  font-size: 16px;
+}
+
+.h5-h3 {
+  font-size: 14px;
+}
+
+.h5-i {
+  font-style: normal;
+}
+
+.h5-a, .h5-abbr, .h5-address, .h5-area, .h5-article, .h5-aside, .h5-audio, .h5-b, .h5-base, .h5-bdi, .h5-bdo, .h5-blockquote, .h5-big, .h5-body, .h5-br, .h5-button, .h5-canvas, .h5-caption, .h5-center, .h5-cite, .h5-code, .h5-col, .h5-colgroup, .h5-data, .h5-datalist, .h5-dd, .h5-del, .h5-dfn, .h5-dir, .h5-div, .h5-dl, .h5-dt, .h5-em, .h5-fieldset, .h5-figcaption, .h5-figure, .h5-footer, .h5-form, .h5-h1, .h5-h2, .h5-h3, .h5-h4, .h5-h5, .h5-h6, .h5-header, .h5-hgroup, .h5-hr, .h5-i, .h5-iframe, .h5-img, .h5-input, .h5-ins, .h5-kbd, .h5-label, .h5-legend, .h5-li, .h5-link, .h5-main, .h5-map, .h5-mark, .h5-menu, .h5-nav, .h5-ol, .h5-optgroup, .h5-option, .h5-output, .h5-p, .h5-param, .h5-pre, .h5-progress, .h5-q, .h5-s, .h5-samp, .h5-section, .h5-select, .h5-small, .h5-source, .h5-span, .h5-strong, .h5-sub, .h5-sup, .h5-table, .h5-tbody, .h5-td, .h5-textarea, .h5-tfoot, .h5-th, .h5-thead, .h5-time, .h5-title, .h5-tt, .h5-tr, .h5-track, .h5-u, .h5-ul, .h5-video, .h5-wbr, .h5-strike, .h5-details, .h5-summary, page {
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+@charset "UTF-8";
+/** reset display start
+  * 依据kbone mp-webpack-plugin app.display.tmpl
+  */
+.h5-body, .h5-p, .h5-address, .h5-article, .h5-aside, .h5-div, .h5-footer, .h5-header, .h5-hgroup, .h5-main, .h5-nav, .h5-section, .h5-blockquote, .h5-figcaption, .h5-figure, .h5-center, .h5-hr, .h5-h1, .h5-h2, .h5-h3, .h5-h4, .h5-h5, .h5-h6, .h5-ul, .h5-menu, .h5-dir, .h5-ol, .h5-dd, .h5-dl, .h5-dt, .h5-form, .h5-legend, .h5-fieldset, .h5-pre, .h5-details, .h5-summary {
+  display: block;
+}
+
+.h5-q, .h5-output, .h5-a, .h5-abbr, .h5-b, .h5-button, .h5-code, .h5-i, .h5-label, .h5-small, .h5-span, .h5-strong, .h5-time {
+  display: inline;
+}
+
+.h5-input, .h5-textarea, keygen, .h5-select, .h5-button, .h5-img, .h5-br {
+  display: inline-block;
+}
+
+.h5-datalist, .h5-area, .h5-param, template {
+  display: none;
+}
+
+.h5-table {
+  display: table;
+}
+
+.h5-thead {
+  display: table-header-group;
+}
+
+.h5-tbody {
+  display: table-row-group;
+}
+
+.h5-tfoot {
+  display: table-footer-group;
+}
+
+.h5-col {
+  display: table-column;
+}
+
+.h5-colgroup {
+  display: table-column-group;
+}
+
+.h5-tr {
+  display: table-row;
+}
+
+.h5-td, .h5-th {
+  display: table-cell;
+}
+
+.h5-caption {
+  display: table-caption;
+}
+
+.h5-li {
+  display: list-item;
+}
+
+.h5-i, .h5-cite, .h5-em, var, .h5-address, .h5-dfn {
+  font-style: italic;
+}
+
+/** reset display end */
+.wx-comp-button.__impage-hot-area-actions-proxy,
+.wx-comp-button.__impage-component-actions-proxy {
+  position: relative;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  line-height: inherit;
+  border-radius: inherit;
+  -webkit-tap-highlight-color: inherit;
+  overflow: hidden;
+  color: inherit;
+  background-color: inherit;
+}
+.wx-comp-button.__impage-hot-area-actions-proxy::before, .wx-comp-button.__impage-hot-area-actions-proxy::after, .wx-comp-button.__impage-component-actions-proxy::before, .wx-comp-button.__impage-component-actions-proxy::after {
+  content: "";
+  width: auto;
+  height: auto;
+  position: static;
+  top: 0;
+  left: 0;
+  border: none;
+  -webkit-transform: none;
+  transform: none;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  border-radius: 0;
+  display: none;
+}
