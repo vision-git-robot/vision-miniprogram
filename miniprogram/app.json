@@ -3,6 +3,14 @@
     "pages/index/index"
   ],
   "subPackages": [
+    {
+      "root": "vision/act2/",
+      "name": "act2",
+      "pages": [
+        "pages/act2/index"
+      ],
+      "independent": true
+    }
   ],
   "window": {
     "backgroundColor": "#ffffff",
